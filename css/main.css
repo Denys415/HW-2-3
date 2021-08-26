@@ -12,15 +12,14 @@
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  
+
   background-color: #ffffff;
   color: #757575;
-
 }
 
 .list {
   list-style: none;
-} 
+}
 
 .btn.primary {
   font-family: Roboto;
@@ -32,7 +31,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
 
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -49,23 +48,22 @@ body {
 }
 
 .site-nav .link.current {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .site-nav .link:focus,
 .site-nav .link:hover {
-  color: #2196F3;
+  color: #2196f3;
 }
 
-.cont-nav .link:focus
-.cont-nav .link:hover, {
-   color: #2196f3;
+.cont-nav .link:focus .cont-nav .link:hover {
+  color: #2196f3;
 }
 
 /* Герой */
 
 .hero {
-  background-color: #2F303A;
+  background-color: #2f303a;
 }
 
 .hero-title {
@@ -78,14 +76,14 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
-  }
+}
 
-  /* Основна частина */
-  /* Особливості. features-list */
+/* Основна частина */
+/* Особливості. features-list */
 
-  .hiden {
-    display: none;
-  }
+.hiden {
+  display: none;
+}
 
 .features-title {
   font-style: normal;
@@ -114,7 +112,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
- 
+
   color: #212121;
 }
 
@@ -126,7 +124,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  
+
   color: #212121;
 }
 
@@ -135,7 +133,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  
+
   color: #212121;
 }
 
@@ -145,22 +143,20 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-
 }
 
 /* Футер */
 
 .footer {
-  background-color: #2F303A;
-  }
+  background-color: #2f303a;
+}
 
 .footer .address {
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  
+
   color: #ffffff;
 }
 
@@ -169,14 +165,11 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  
+
   color: rgba(255, 255, 255, 0.6);
 }
 
-  
-
 /* ПОРТФОЛІО */
-
 
 /* Чим ми займаємось (portfolio) */
 
@@ -192,7 +185,7 @@ body {
 
 .port-but .link:focus,
 .port-but .link:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
   color: #ffffff;
 }
 
