@@ -43,6 +43,12 @@ body {
 
 /* Шапка сайту */
 
+.logo-head {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .link {
   font-weight: 500;
   font-size: 14px;
@@ -57,16 +63,46 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  margin-bottom: 32px;
-  width: 1170px;
+  margin-bottom: 0;
+  width: 1230px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .site-nav {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.cont-nav .item + .item {
+  margin-left: 50px;
+}
+
+.cont-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .cont-nav {
+  display: flex;
+  margin-left: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -80,7 +116,8 @@ body {
   color: #2196f3;
 }
 
-.cont-nav .link:focus .cont-nav .link:hover {
+.cont-nav .link:focus,
+.cont-nav .link:hover {
   color: #2196f3;
 }
 
@@ -99,17 +136,23 @@ body {
 /* Герой */
 
 .hero {
-  background-color: #2f303a;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 94px;
+
+  text-align: center;
+
+  background-color: #2f303a;
 }
 
 .hero-title {
+  width: 696px;
+
   margin-top: 0;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 200px;
 
   font-style: normal;
   font-weight: 900;
@@ -130,10 +173,24 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 94px;
-  width: 1170px;
+  width: 1230px;
+}
+.container-features .list-feat {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features .item {
+  width: 270px;
+}
+
+.features .item + .item {
+  margin-left: 30px;
 }
 
 .features-title {
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-style: normal;
@@ -158,6 +215,9 @@ body {
 }
 
 .list-feat {
+  padding-left: 15px;
+  padding-right: 15px;
+
   list-style: none;
 }
 
@@ -168,12 +228,22 @@ body {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 158px;
-  width: 1170px;
+  width: 1230px;
+}
+
+.container-work .list-work {
+  display: flex;
+}
+
+.list-work .item + .item {
+  margin-left: 30px;
 }
 
 .work-title {
   margin-top: 0;
   margin-bottom: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   font-style: normal;
   font-weight: 700;
@@ -187,20 +257,29 @@ body {
 .list-work {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   list-style: none;
 }
 /* Наша команда */
 
+.sec-command {
+  background-color: #f5f4fa;
+}
+
 .container-command {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  width: 1170px;
+  padding-bottom: 94px;
+  width: 1230px;
 }
 
 .command {
   margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   font-style: normal;
   font-weight: 700;
@@ -211,8 +290,12 @@ body {
   color: #212121;
 }
 
+.container-command .list-com {
+  display: flex;
+}
+
 .command-title {
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -225,7 +308,7 @@ body {
 
 .command-text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 
   font-style: normal;
   font-weight: 400;
@@ -237,20 +320,40 @@ body {
 .list-com {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   list-style: none;
 }
 
+.list-com .item {
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: #ffffff;
+}
+
+.list-com .item + .item {
+  margin-left: 30px;
+}
+
 /* Футер */
+
+.logo-foot {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
 
 .container-foot {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  width: 1170px;
+  width: 1230px;
 }
 .footer {
+  padding-top: 90px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
@@ -275,9 +378,15 @@ body {
 .list-foot {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   list-style: none;
+}
+
+/* ??? Запитати,як забрати нижній маржин у посиланні-телефон ??? */
+.list-foot :not(:first-child) {
+  margin-bottom: 9px;
 }
 
 /* ПОРТФОЛІО */
@@ -289,7 +398,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 132px;
-  width: 1170px;
+  width: 1230px;
 }
 
 .container-but {
@@ -297,7 +406,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 50px;
-  width: 1170px;
+  width: 1230px;
 }
 
 .port-but .link {
@@ -310,6 +419,21 @@ body {
   letter-spacing: 0.03em;
 }
 
+.port-but .item + .item {
+  margin-left: 9px;
+}
+
+.item button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
+}
+
 .port-but .link:focus,
 .port-but .link:hover {
   background-color: #2196f3;
@@ -317,9 +441,12 @@ body {
 }
 
 .list-butt {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   list-style: none;
 }
@@ -331,7 +458,20 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 94px;
-  width: 1170px;
+  width: 1230px;
+}
+
+.port-work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.port-work .item {
+  margin-right: 30px;
+}
+
+.port-work .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .port-work .title {
@@ -349,7 +489,8 @@ body {
 
 .work-list {
   margin-top: 0;
-  padding-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 
   list-style: none;
 }
