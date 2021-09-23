@@ -17,6 +17,27 @@ body {
   color: #757575;
 }
 
+/* УТИЛИТИ */
+
+/* .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
+
+/* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+} */
+
 .btn.primary {
   min-width: 200px;
   margin-left: auto;
@@ -64,7 +85,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  width: 1230px;
+  width: 1200px;
 }
 .container {
   display: flex;
@@ -173,12 +194,28 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 94px;
-  width: 1230px;
+  width: 1200px;
 }
 .container-features .list-feat {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* АЛЬТЕРНАТИВА СПРАЙТУ */
+
+/* .container-features .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-antena::before {
+  background-image: url(../images/antenna\ 1.svg); */
 }
 
 .features .item {
@@ -228,7 +265,7 @@ body {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 158px;
-  width: 1230px;
+  width: 1200px;
 }
 
 .container-work .list-work {
@@ -273,7 +310,7 @@ body {
   margin-right: auto;
   margin-top: 0px;
   padding-bottom: 94px;
-  width: 1230px;
+  width: 1200px;
 }
 
 .command {
@@ -348,7 +385,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  width: 1230px;
+  width: 1200px;
 }
 .footer {
   padding-top: 90px;
@@ -385,11 +422,10 @@ body {
 }
 
 /* ??? Запитати,як забрати нижній маржин у посиланні-телефон ??? */
-.list-foot :not(:first-child) {
+
+.list-foot :not(:last-child) {
   margin-bottom: 9px;
 }
-
-/* ПОРТФОЛІО */
 
 /* Чим ми займаємось (portfolio) */
 
@@ -398,7 +434,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 132px;
-  width: 1230px;
+  width: 1200px;
 }
 
 .container-but {
@@ -406,7 +442,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 50px;
-  width: 1230px;
+  width: 1200px;
 }
 
 .port-but .link {
@@ -417,6 +453,7 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .port-but .item + .item {
@@ -458,7 +495,7 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 94px;
-  width: 1230px;
+  width: 1200px;
 }
 
 .port-work {
@@ -468,11 +505,23 @@ body {
 
 .port-work .item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .port-work .item:nth-child(3n) {
   margin-right: 0;
 }
+
+.port-work .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* АЛЬТЕРНАТИВА */
+/* calc((100% - кол-cmь маржинів в рядку * значення маржина) / кол-сть элементів в рядку */
+/* width: calc((100% - 60px) / 3); */
+/* margin-right: 30px; */
+/* margin-bottom: 30px; */
+/* + прописувати  */
 
 .port-work .title {
   margin-top: 0;
@@ -488,6 +537,7 @@ body {
 }
 
 .work-list {
+  justify-content: center;
   margin-top: 0;
   padding-left: 15px;
   padding-right: 15px;
